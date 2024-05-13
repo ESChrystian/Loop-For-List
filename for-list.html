@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Laço de Repetição(For) - Para Lista</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- Css do Projeto -->
+  <link rel='stylesheet' type='text/css' media='screen' href='_css/style.css'>
+</head>
+<style>
+  body {
+    background: url("img/instrument-4487573_1280.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+</style>
+
+<body>
+
+  <form name="selectForm" id="selectForm">
+    <p>
+      <!-- Mensagem de interação com o user -->
+      <label for="tipoMusica">Escolha alguns tipos de música, em seguida, clique no botão
+        abaixo:</label>
+      <!-- Lista de Musicas -->
+
+    </p>
+    <select id="tipoMusica" name="tipoMusica" multiple="multiple">
+      <option selected="selected">R&B</option>
+      <option>Jazz</option>
+      <option>Blues</option>
+      <option>New Age</option>
+      <option>Classico</option>
+      <option>Ópera</option>
+      <option>Pop</option>
+      <option>Rock</option>
+      <option>Sertanejo</option>
+    </select>
+
+    <!-- Botão de Envio -->
+    <p><input id="btn" type="button" value="Quantos foram selecionados?" />
+    </p>
+
+  </form>
+
+  <script>
+
+    function howMany(selectObject) {
+      var numeroSelecionadas = 0;
+      for (var i = 0; i < selectObject.options.length; i++) {
+        // "var i = 0, enquanto i for menor do que número de opções(9), aumente mais 1 á i"
+        if (selectObject.options[i].selected) {
+          numeroSelecionadas++;
+        }
+      }
+      return numeroSelecionadas;
+    }
+
+    var btn = document.getElementById("btn");
+
+    btn.addEventListener("click", function () {
+      alert(
+        "Total de opções selecionadas: " +
+        howMany(document.selectForm.tipoMusica),
+      );
+    });
+  </script>
+</body>
+
+</html>
