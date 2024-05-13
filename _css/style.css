@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family:Poppins ;
+    font-size:larger;
+    color: white;
+}
+
+form {
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+
+}
+
+select {
+    margin-top: 10px;
+    flex-basis: 200px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#tipoMusica {
+    background-color: rgba(0, 0, 0, 0.224);
+    display: block;
+    scrollbar-width: none;
+    height: 400px;
+    width: 40%;
+
+
+}
+
+option {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 15px;
+}
+
+
+
+option {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: red;
+
+
+}
+
+
+
+
+option:hover {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+input {
+    position: absolute;
+    left: 30%;
+    padding: 20px 200px 20px 220px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s ease;
+    margin-top: 10px;
+    color: white;
+}
+
+input:hover {
+    border: 2px solid black;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+    color: rgb(255, 0, 0);
+}
