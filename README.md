@@ -2,7 +2,7 @@
 <p><img alt="Static Badge" src="https://img.shields.io/badge/version-%20v%200.0.1-black"> <img alt="Static Badge" src="https://img.shields.io/badge/release%20date-%20april%20-%20black"> <img alt="Static Badge" src="https://img.shields.io/badge/lisence-%20Marista%20Irm%C3%A3o%20Ac%C3%A1cio%20-%20black">
 </p>
 <p align=center>
-<img src="img/Captura de tela 2024-05-15 142511.png" width=700px >
+<img src="img/img.png" width=700px >
 </p>
 
 ### O que é o Laço FOR?
